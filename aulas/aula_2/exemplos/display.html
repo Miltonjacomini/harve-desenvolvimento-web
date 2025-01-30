@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>Harve - Cursos</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .block {
+        display: block;
+        background-color: lightblue;
+        margin-bottom: 10px;
+      }
+
+      .inline {
+        display: inline;
+        background-color: lightgreen;
+      }
+
+      .inline-block {
+        display: inline-block;
+        background-color: lightcoral;
+        width: 150px;
+        height: 50px;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .flex-container {
+        display: flex;
+        justify-content: space-around;
+        background-color: lightyellow;
+      }
+
+      .btn {
+        display: inline-block; /* Fica na mesma linha, mas permite definir largura e altura */
+        width: 100px;
+        height: 40px;
+        margin: 5px;
+        background-color: lightblue;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="block">Este é um bloco</div>
+    <span class="inline">Este é inline</span>
+    <div class="inline-block">Este é inline-block</div>
+    <div class="hidden">Este está escondido</div>
+    <div class="flex-container">
+      <div>Item 1</div>
+      <div>Item 2</div>
+    </div>
+
+    -------------------------------
+
+    <span class="inline">Este é inline</span>
+    <span class="inline">Este é inline</span>
+
+    -------------------------------
+
+    <div class="buttons">
+      <button class="btn">Botão 1</button>
+      <button class="btn">Botão 2</button>
+      <button class="btn">Botão 3</button>
+    </div>
+  </body>
+</html>

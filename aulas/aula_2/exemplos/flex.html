@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Harve - Cursos</title>
+    <style>
+      .container {
+        display: flex;
+        border: 1px solid #000;
+        width: 100%;
+        height: 200px;
+      }
+
+      .container-interno {
+        display: flex;
+        border: 1px solid #000;
+        width: 100%;
+      }
+
+      .item {
+        background-color: lightblue;
+        margin: 5px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex com flex-direction:row</h1>
+    <div class="container" style="flex-direction: row; ">
+      <div class="item" style="width: 100%;">1</div>
+      <div class="container-interno" style="flex-direction: row;">
+        <div class="item" style="width: 100%;">A</div>
+        <div class="item" style="width: 100%;">B</div>
+      </div>
+      <div class="item" style="width: 100%;">3</div>
+    </div>
+
+    <h1>Flex com flex-direction:row / com flex-direction:column</h1>
+    <div class="container" style="flex-direction: row; ">
+      <div class="item" style="width: 100%;">1</div>
+      <div class="container-interno" style="flex-direction: column;">
+        <div class="item" style="height: 100%;">A</div>
+        <div class="item" style="height: 100%;">B</div>
+      </div>
+      <div class="item" style="width: 100%;">3</div>
+    </div>
+
+    <h1>Flex com flex-direction:column</h1>
+    <div class="container" style="flex-direction: column;">
+      <div class="item" style="height: 100%;">1</div>
+      <div class="container-interno" style="flex-direction: column;">
+        <div class="item" style="height: 100%;">A</div>
+        <div class="item" style="height: 100%;">B</div>
+      </div>
+      <div class="item" style="height: 100%;">3</div>
+    </div>
+  </body>
+</html>

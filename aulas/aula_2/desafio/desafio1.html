@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Harve - Cursos</title>
+    <link ref="stylesheet" href="style.css" />
+    <style>
+      .blocos {
+        width: 800px;
+      }
+
+      .bloco-1 {
+        display: flex;
+      }
+
+      .bloco-1-item-1 {
+        background-color: rgb(0, 235, 4);
+        width: 50%;
+        height: 200px;
+      }
+
+      .bloco-1-item-2 {
+        background-color: rgb(255, 255, 0);
+        width: 50%;
+        height: 200px;
+      }
+
+      .bloco-1-interno {
+        width: 120px;
+        height: 80px;
+        background-color: blue;
+        position: relative;
+        top: 30%;
+        left: 35%;
+      }
+
+      .bloco-2 {
+        display: flex;
+      }
+
+      .bloco-2-item-1 {
+        background-color: blueviolet;
+        width: 400px;
+        height: 200px;
+      }
+
+      .bloco-2-item-2 {
+        background-color: yellow;
+        width: 400px;
+        height: 200px;
+      }
+      .bloco-2-item-3 {
+        background-color: blueviolet;
+        width: 400px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="blocos">
+      <div class="bloco-1">
+        <div class="bloco-1-item-1">
+          <div class="bloco-1-interno"></div>
+        </div>
+        <div class="bloco-1-item-2">
+          <div class="bloco-1-interno"></div>
+        </div>
+      </div>
+      <div class="bloco-2">
+        <div class="bloco-2-item-1"></div>
+        <div class="bloco-2-item-2"></div>
+        <div class="bloco-2-item-3"></div>
+      </div>
+    </div>
+  </body>
+</html>

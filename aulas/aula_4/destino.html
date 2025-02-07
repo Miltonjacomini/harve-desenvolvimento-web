@@ -1,0 +1,28 @@
+<html>
+  <head>
+
+  </head>
+  <body>
+    <h1>Resultado do formulário</h1>
+
+    <div>
+
+      Nome: <span id="nome"></span></br>
+      Sobrenome: <span id="sobrenome"></span></br>
+      Data Nasc: <span id="data_nasc"></span></br>
+      Telefone: <span id="telefone"></span></br>
+      E-mail: <span id="email"></span>
+
+    </div>
+  </body>
+  <script>
+    const meus_atributos = window.location.search;
+    const parametros_url = new URLSearchParams(meus_atributos);
+
+    // isso busca no HTML o meu elemento com ID = NOME
+    var elementoNome = document.getElementById("nome")
+    elementoNome.textContent = parametros_url.get("nomeDaURL");
+
+
+  </script>
+</html>

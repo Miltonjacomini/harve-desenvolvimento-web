@@ -1,0 +1,157 @@
+/* Reset básico */
+body, h1, h2, p, ul, li, button, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Linha com foto do usuário, status, streak e badges */
+.user-info {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-photo img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.user-status {
+    flex-grow: 1;
+}
+
+.user-status p {
+    margin-bottom: 10px;
+}
+
+.counters {
+    justify-content: right;
+    display: flex;
+    gap: 20px;
+}
+
+.streak, .badges {
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Linha com botões Today, Courses e Practice */
+.button-row {
+    display: flex;
+    justify-content: center;
+    /* align-items: center;
+    text-align: center; */
+    margin: 20px;
+    width: 400px;
+}
+
+.button-row button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.button-row button.active {
+    background-color: #0056b3;
+}
+
+.button-row button:hover {
+    background-color: #0056b3;
+}
+
+/* Linha com colunas Learn, Practice e Apply */
+.content-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    gap: 20px;
+}
+
+.column {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.column h2 {
+    margin-bottom: 10px;
+}
+
+.card {
+    text-align: center;
+}
+
+.card img {
+    margin-bottom: 10px;
+}
+
+/* Galeria de fotos com novidades */
+.gallery {
+    margin: 20px;
+}
+
+.gallery h2 {
+    margin-bottom: 20px;
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.gallery-column {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+}
+
+.gallery-column img {
+    margin-bottom: 10px;
+}

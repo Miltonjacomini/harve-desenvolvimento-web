@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Carrinho de Compras</h1>
+        <table id="cart">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Preço Unitário</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Produto 1</td>
+                    <td><input type="number" class="quantity" value="1" min="1"></td>
+                    <td class="price">R$ 50.00</td>
+                    <td class="total">R$ 50.00</td>
+                </tr>
+                <tr>
+                    <td>Produto 2</td>
+                    <td><input type="number" class="quantity" value="2" min="1"></td>
+                    <td class="price">R$ 30.00</td>
+                    <td class="total">R$ 60.00</td>
+                </tr>
+                <tr>
+                    <td>Produto 3</td>
+                    <td><input type="number" class="quantity" value="1" min="1"></td>
+                    <td class="price">R$ 20.00</td>
+                    <td class="total">R$ 20.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="text-right"><strong>Total do Carrinho:</strong></td>
+                    <td id="cart-total">R$ 130.00</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

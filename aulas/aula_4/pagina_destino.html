@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Destino</title>
+</head>
+<body>
+    <h1>Dados do Formulário</h1>
+    <p>Nome: <span id="displayNome"></span></p>
+    <p>Email: <span id="displayEmail"></span></p>
+
+    <a href="index.html" style="margin-top: 20px;">Voltar ao index</a>
+    <script>
+        // Extraindo a query string da URL
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+
+        // Exibindo os parâmetros na página
+        document.getElementById('displayNome').textContent = urlParams.get('nome');
+        document.getElementById('displayEmail').textContent = urlParams.get('email');
+    </script>
+</body>
+</html>

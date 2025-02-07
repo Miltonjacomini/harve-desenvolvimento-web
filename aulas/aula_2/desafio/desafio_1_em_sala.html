@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <style>
+      .divizona {
+        width: 900px;
+        height: 300px;
+        background-color: black;
+      }
+
+      .linha-1 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+      }
+
+      .linha-1-bloco {
+        width: 50%;
+        height: 100%;
+      }
+
+      .linha-2 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+      }
+
+      .linha-2-bloco {
+        background-color: rgb(85, 48, 248);
+        width: 100%;
+        height: 100%;
+      }
+
+      .bloco-interno {
+        position: relative;
+        height: 100px;
+        width: 200px;
+        background-color: blue;
+        left: 30%;
+        top: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="divizona">
+      <div class="linha-1">
+        <div class="linha-1-bloco" style="background-color: rgb(39, 251, 16)">
+          <div class="bloco-interno"></div>
+        </div>
+        <div class="linha-1-bloco" style="background-color: yellow">
+          <div class="bloco-interno"></div>
+        </div>
+      </div>
+      <div class="linha-2">
+        <div class="linha-2-bloco"></div>
+        <div class="linha-2-bloco" style="background-color: yellow"></div>
+        <div class="linha-2-bloco"></div>
+      </div>
+    </div>
+  </body>
+</html>
